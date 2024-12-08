@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body {
+    height: 1500px;
+}
 .box-main{
     display: flex;
     justify-content: space-around;
@@ -12,7 +15,7 @@
 .box {
     height: 100px;
     width: 100px;
-    background-color: brown;
+    background-color: rgb(222, 9, 226);
     transition: 1s;
 }
 .box:hover {
@@ -66,5 +69,75 @@
     100%{
         transform: translate(0,0);
         background-color: indianred;
+    }
+}
+.header-section {
+    height: 70vh;
+    background-image: linear-gradient(to right , #a73737, #7a2828);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    text-align: center;
+}
+.primary-heading {
+    color: #fff;
+    font-size: 40px;
+
+    animation-name: toHead;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+.primary-description {
+    color: #fff;
+    width: 700px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 24px 0;
+    text-align: justify;
+    animation-name: toTop;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+.btn {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background-color: cornflowerblue;
+    padding: 12px 36px;
+    border-radius: 8px;
+    transition: 0.5s;
+    border: 1.5px solid cornflowerblue;
+    animation-name: toBTN;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+.btn:hover {
+    background-color: transparent;
+}
+@keyframes toHead {
+    0% {
+        transform: translateX(-2000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes toTop {
+    0% {
+        transform: translateX(2000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes toBTN {
+    0% {
+        transform: translateY(-1000px);
+    }
+    100% {
+        transform: translateX(0px);
     }
 }
