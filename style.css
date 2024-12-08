@@ -4,8 +4,25 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+.box-main{
+    display: flex;
+    justify-content: space-between;
+}
 .box {
     height: 100px;
-    width: 50px;
+    width: 100px;
     background-color: brown;
+    transition: 1s;
+}
+.box:hover {
+    transform: translateX(300px);
+}
+.box-2 {
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    transition: 1s;
+}
+.box-2:hover {
+    transform: translateY(100px);
 }
