@@ -52,19 +52,22 @@
         background-color: blue;
     }
     25%{
-        transform: translate(500px,0);
+        transform: translate(300px,0);
         background-color: chartreuse;
     }
     50%{
-        transform: translate(500px,500px);
+        transform: translate(300px,300px);
         background-color: darkmagenta;
     }
     75%{
-        transform: translate(0,500px);
+        transform: translate(0,300px);
         background-color: darkkhaki;
     }
     100%{
         transform: translate(0,0);
         background-color: indianred;
     }
+}
+.box-max {
+    height: 5vh;
 }
